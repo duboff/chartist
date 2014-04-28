@@ -5,5 +5,5 @@ class User < ActiveRecord::Base
     :recoverable, :rememberable, :trackable #, :validatable
 
   validates :password, presence: { message: "is required" }, length: { minimum: 8, message: "is too short!" }
-  validates :email, :presence => true
+  validates :email, :presence => true, :uniqueness => true
 end
