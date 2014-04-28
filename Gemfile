@@ -16,6 +16,7 @@ gem 'websocket-rails'
 gem "chartkick"
 gem 'jquery-rails'
 gem 'smarter_csv'
+gem 'omniauth-google-oauth2'
 
 
 group :production do
