@@ -1,12 +1,12 @@
 Rails.application.routes.draw do
 
-  devise_for :users, :controllers => { :omniauth_callbacks => "users/omniauth_callbacks" }
+  # devise_for :users, :controllers => { :omniauth_callbacks => "users/omniauth_callbacks" }
   root to: "landing#index"
   # root to: "home#index"
-  get 'secret_homepage' => 'home#index'
+  # get 'secret_homepage' => 'home#index'
 
 
-  resources :charts
+  # resources :charts
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
