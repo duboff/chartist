@@ -9,15 +9,13 @@ class Chart < ActiveRecord::Base
   has_many :series
 
   has_attached_file :csv, :default_url => "/images/missing.csv"
-  validates_attachment :csv,
-    content_type: {content_type: 'text/csv'},
-    size: {in: 0..2.megabytes},
-    presence: true,
-  if: :new_record?
+  # validates_attachment :csv,
+  #   content_type: {content_type: 'text/csv'},
+  #   size: {in: 0..2.megabytes},
+  #   presence: true,
+  # if: :new_record?
 
-
-    attr_accessor :dashboard_titles
-
+    attr_accessor :dashboard_titles, :table_data
 
     after_save :prepare_chart
 
@@ -33,27 +31,53 @@ class Chart < ActiveRecord::Base
     end
 
     def create_series
-      csv_headers = CSV.read(csv.path).first
-      csv_headers[1...csv_headers.size].each_with_index do |header, i|
-        Series.create(name: header, order: i+1, chart_id: self.id)
+      if csv.empty?
+        puts '*' * 50
+        p CSV.parse(self.table_data)
+        puts '*' * 50
+        csv_headers = CSV.parse(self.table_data).first
+      else
+        csv_headers = self.table_data.first
+        csv_headers[1...csv_headers.size].each_with_index do |header, i|
+          Series.create(name: header, order: i+1, chart_id: self.id)
+        end
       end
     end
 
     def create_datapoints
-      processor = CSVProcessor.new(csv.path)
-      processor.process.each do |row|
-        (1...row.size).each do |series_order|
-          current_series = Series.where(chart_id: self.id, order: series_order).first
-          Datapoint.create(x: row.values[0], y: row.values[series_order], chart_id: self.id, series_id: current_series.id)
+      
+      if csv.empty?
+          CSV.open('/lib/test.csv', 'wb') do |test_csv|
+            CSV.parse(self.table_data).each do |elem|
+              test_csv << elem
+            end
+          end
+          processor = CSVProcessor.new('/lib/test.csv')
+          processor.process.each do |row|
+          (1...row.size).each do |series_order|
+            current_series = Series.where(chart_id: self.id, order: series_order).first
+            Datapoint.create(x: row.values[0], y: row.values[series_order], chart_id: self.id, series_id: current_series.id)
+          end
         end
+
+      else
+        processor = CSVProcessor.new(csv.path)
+        processor.process.each do |row|
+          (1...row.size).each do |series_order|
+            current_series = Series.where(chart_id: self.id, order: series_order).first
+            Datapoint.create(x: row.values[0], y: row.values[series_order], chart_id: self.id, series_id: current_series.id)
+          end
+        end
+        csv.destroy
       end
-      csv.destroy
     end
 
     # def table_data=(json)
-    #   data = JSON.parse(json)
-    #   data.each do |row|
-    #   end
+    #   @json = json
+    # end
+
+    # def table_data
+    #   CSV.parse(@json)
     # end
 
 

@@ -1,10 +1,10 @@
  
-  <script src="assets/jquery.scrollTo-1.4.3.1.min.js"></script>
-  <script src="assets/jquery.scrollorama.js"></script>
-  <script src="assets/jquery.easing.1.3.js"></script>
-  <script src="assets/jquery.scrolldeck.js"></script>
+<script src="assets/jquery.scrollTo-1.4.3.1.min.js"></script>
+<script src="assets/jquery.scrollorama.js"></script>
+<script src="assets/jquery.easing.1.3.js"></script>
+<script src="assets/jquery.scrolldeck.js"></script>
 
-  <script type="text/javascript">
+<script type="text/javascript">
 $(document).ready(function() {
   var deck = new $.scrolldeck({
     buttons: '.nav-button',
@@ -17,9 +17,11 @@ $(document).ready(function() {
 </script>
 
 <div class="wrapper">
+
   <div class="homepage-header slide" id="homepage-cover">
-      <%= image_tag "homepage/logo_home.png" %>
-      <div class="header-text">Chartist is an app that allows people quickly visualize and share simple data.</div>
+      <div class = "launch_date">Launching May 9th 2014</div>
+      <%= image_tag "homepage/logo_home.png", class: "home_header_logo" %>
+      <div class="header-text">Beautiful charts on the go</div>
       <a href="#hpsignup" class="nav-button btn btn-danger">Start creating</div></a>
   </div>
 
