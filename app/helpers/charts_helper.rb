@@ -11,7 +11,10 @@ module ChartsHelper
   def color_select(colorscheme)
     colors = {
       "default" => ['#3366cc', '#dc3912', '#ff9900', '#109618'],
-      'hockeytown' => ['#E56717', '#1796E6', '#FDD017', '#9DC209', 'A690BF']
+      'winter' => ['#CC6104', '#4E6C91', '#C86682', '#E3D023', '#528743'],
+      'fall' => ['#D65602', '#ED9A36', '#FCE42A', '#615F5F', '#969388'],
+      'summer' = > ['#B1B1B1', '#4EB8E6', '#EA729A', '#FDD017', '#9DC209'],
+      'spring' => ['#E56717', '#1796E6', '#FDD017', '#9DC209', 'A690BF']
     }
     colors[colorscheme]
   end

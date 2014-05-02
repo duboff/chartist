@@ -45,8 +45,14 @@
       <div class ="form-group">
         <%= f.radio_button :colorscheme, :default %>
         <%= f.label :colorscheme, 'Default', value: :default %>
-        <%= f.radio_button :colorscheme, :hockeytown %>
-        <%= f.label :colorscheme, 'hockeytown', value: :hockeytown %>
+        <%= f.radio_button :colorscheme, :winter %>
+        <%= f.label :colorscheme, 'Winter', value: :winter %>
+        <%= f.radio_button :colorscheme, :fall %>
+        <%= f.label :colorscheme, 'Winter', value: :fall %>
+        <%= f.radio_button :colorscheme, :summer %>
+        <%= f.label :colorscheme, 'Winter', value: :summer %>
+        <%= f.radio_button :colorscheme, :spring %>
+        <%= f.label :colorscheme, 'Winter', value: :spring %>
         <input type="button" name="previous" class="previous action-button" value="Previous" />
         <input type="button" name="next" class="next action-button" value="Next" />
       </fieldset>
