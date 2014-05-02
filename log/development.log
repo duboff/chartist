@@ -51047,3 +51047,1442 @@ Processing by ChartsController#show as JSON
   [1m[36mChart Load (1.2ms)[0m  [1mSELECT  "charts".* FROM "charts"  WHERE "charts"."id" = $1 LIMIT 1[0m  [["id", 15]]
   [1m[35mSeries Load (0.5ms)[0m  SELECT "series".* FROM "series"  WHERE "series"."chart_id" = $1  [["chart_id", 15]]
 Completed 200 OK in 15ms (Views: 0.4ms | ActiveRecord: 3.3ms)
+
+
+Started GET "/charts/new" for 127.0.0.1 at 2014-05-02 16:02:17 +0100
+Processing by ChartsController#new as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = 4  ORDER BY "users"."id" ASC LIMIT 1[0m
+  Rendered charts/new.html.erb within layouts/application (3.1ms)
+  Rendered layouts/_navbar.html.erb (0.5ms)
+Completed 200 OK in 100ms (Views: 98.0ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/reset.css?body=1" for 127.0.0.1 at 2014-05-02 16:02:17 +0100
+
+
+Started GET "/assets/bootstrap.css?body=1" for 127.0.0.1 at 2014-05-02 16:02:17 +0100
+
+
+Started GET "/assets/font-awesome.css?body=1" for 127.0.0.1 at 2014-05-02 16:02:17 +0100
+
+
+Started GET "/assets/bootstrap-social.css?body=1" for 127.0.0.1 at 2014-05-02 16:02:17 +0100
+
+
+Started GET "/assets/charts.css?body=1" for 127.0.0.1 at 2014-05-02 16:02:17 +0100
+
+
+Started GET "/assets/dashboards.css?body=1" for 127.0.0.1 at 2014-05-02 16:02:17 +0100
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2014-05-02 16:02:17 +0100
+
+
+Started GET "/assets/navbar.css?body=1" for 127.0.0.1 at 2014-05-02 16:02:17 +0100
+
+
+Started GET "/assets/signing.css?body=1" for 127.0.0.1 at 2014-05-02 16:02:17 +0100
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-05-02 16:02:17 +0100
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2014-05-02 16:02:17 +0100
+
+
+Started GET "/assets/jquery.countdown.js?body=1" for 127.0.0.1 at 2014-05-02 16:02:17 +0100
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-05-02 16:02:17 +0100
+
+
+Started GET "/assets/jquery.scrollTo-1.4.3.1.min.js?body=1" for 127.0.0.1 at 2014-05-02 16:02:17 +0100
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-05-02 16:02:17 +0100
+
+
+Started GET "/assets/jquery.scrolldeck.js?body=1" for 127.0.0.1 at 2014-05-02 16:02:17 +0100
+
+
+Started GET "/assets/jquery.scrollorama.js?body=1" for 127.0.0.1 at 2014-05-02 16:02:17 +0100
+
+
+Started GET "/assets/landing-page.js?body=1" for 127.0.0.1 at 2014-05-02 16:02:17 +0100
+
+
+Started GET "/assets/bootstrap/affix.js?body=1" for 127.0.0.1 at 2014-05-02 16:02:17 +0100
+
+
+Started GET "/assets/jquery.easing.min.js?body=1" for 127.0.0.1 at 2014-05-02 16:02:17 +0100
+
+
+Started GET "/assets/bootstrap/collapse.js?body=1" for 127.0.0.1 at 2014-05-02 16:02:17 +0100
+
+
+Started GET "/assets/bootstrap/dropdown.js?body=1" for 127.0.0.1 at 2014-05-02 16:02:17 +0100
+
+
+Started GET "/assets/bootstrap/carousel.js?body=1" for 127.0.0.1 at 2014-05-02 16:02:17 +0100
+
+
+Started GET "/assets/bootstrap/alert.js?body=1" for 127.0.0.1 at 2014-05-02 16:02:17 +0100
+
+
+Started GET "/assets/bootstrap/button.js?body=1" for 127.0.0.1 at 2014-05-02 16:02:17 +0100
+
+
+Started GET "/assets/bootstrap/tab.js?body=1" for 127.0.0.1 at 2014-05-02 16:02:17 +0100
+
+
+Started GET "/assets/bootstrap/transition.js?body=1" for 127.0.0.1 at 2014-05-02 16:02:17 +0100
+
+
+Started GET "/assets/bootstrap/scrollspy.js?body=1" for 127.0.0.1 at 2014-05-02 16:02:17 +0100
+
+
+Started GET "/assets/bootstrap/modal.js?body=1" for 127.0.0.1 at 2014-05-02 16:02:17 +0100
+
+
+Started GET "/assets/bootstrap/tooltip.js?body=1" for 127.0.0.1 at 2014-05-02 16:02:17 +0100
+
+
+Started GET "/assets/bootstrap/popover.js?body=1" for 127.0.0.1 at 2014-05-02 16:02:17 +0100
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2014-05-02 16:02:17 +0100
+
+
+Started GET "/assets/canvas2image.js?body=1" for 127.0.0.1 at 2014-05-02 16:02:17 +0100
+
+
+Started GET "/assets/canvassaver.js?body=1" for 127.0.0.1 at 2014-05-02 16:02:17 +0100
+
+
+Started GET "/assets/charts.js?body=1" for 127.0.0.1 at 2014-05-02 16:02:17 +0100
+
+
+Started GET "/assets/dashboards.js?body=1" for 127.0.0.1 at 2014-05-02 16:02:17 +0100
+
+
+Started GET "/assets/handsontable.js?body=1" for 127.0.0.1 at 2014-05-02 16:02:17 +0100
+
+
+Started GET "/assets/widgets.js?body=1" for 127.0.0.1 at 2014-05-02 16:02:17 +0100
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-05-02 16:02:17 +0100
+
+
+Started GET "/assets/chartkick.js?body=1" for 127.0.0.1 at 2014-05-02 16:02:17 +0100
+
+
+Started GET "/assets/navbar/logo_pic.png" for 127.0.0.1 at 2014-05-02 16:02:17 +0100
+
+
+Started GET "/charts/new" for 127.0.0.1 at 2014-05-02 16:06:28 +0100
+Processing by ChartsController#new as HTML
+  [1m[35mUser Load (0.4ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = 4  ORDER BY "users"."id" ASC LIMIT 1
+  Rendered charts/new.html.erb within layouts/application (8.4ms)
+  Rendered layouts/_navbar.html.erb (0.7ms)
+Completed 200 OK in 134ms (Views: 106.5ms | ActiveRecord: 4.5ms)
+
+
+Started GET "/assets/reset.css?body=1" for 127.0.0.1 at 2014-05-02 16:06:28 +0100
+
+
+Started GET "/assets/bootstrap.css?body=1" for 127.0.0.1 at 2014-05-02 16:06:28 +0100
+
+
+Started GET "/assets/font-awesome.css?body=1" for 127.0.0.1 at 2014-05-02 16:06:28 +0100
+
+
+Started GET "/assets/bootstrap-social.css?body=1" for 127.0.0.1 at 2014-05-02 16:06:28 +0100
+
+
+Started GET "/assets/charts.css?body=1" for 127.0.0.1 at 2014-05-02 16:06:28 +0100
+
+
+Started GET "/assets/dashboards.css?body=1" for 127.0.0.1 at 2014-05-02 16:06:28 +0100
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2014-05-02 16:06:28 +0100
+
+
+Started GET "/assets/navbar.css?body=1" for 127.0.0.1 at 2014-05-02 16:06:28 +0100
+
+
+Started GET "/assets/signing.css?body=1" for 127.0.0.1 at 2014-05-02 16:06:28 +0100
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-05-02 16:06:28 +0100
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-05-02 16:06:28 +0100
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-05-02 16:06:28 +0100
+
+
+Started GET "/assets/jquery.easing.min.js?body=1" for 127.0.0.1 at 2014-05-02 16:06:28 +0100
+
+
+Started GET "/assets/bootstrap/affix.js?body=1" for 127.0.0.1 at 2014-05-02 16:06:28 +0100
+
+
+Started GET "/assets/bootstrap/alert.js?body=1" for 127.0.0.1 at 2014-05-02 16:06:28 +0100
+
+
+Started GET "/assets/bootstrap/button.js?body=1" for 127.0.0.1 at 2014-05-02 16:06:28 +0100
+
+
+Started GET "/assets/bootstrap/carousel.js?body=1" for 127.0.0.1 at 2014-05-02 16:06:28 +0100
+
+
+Started GET "/assets/bootstrap/collapse.js?body=1" for 127.0.0.1 at 2014-05-02 16:06:28 +0100
+
+
+Started GET "/assets/bootstrap/dropdown.js?body=1" for 127.0.0.1 at 2014-05-02 16:06:28 +0100
+
+
+Started GET "/assets/bootstrap/tab.js?body=1" for 127.0.0.1 at 2014-05-02 16:06:28 +0100
+
+
+Started GET "/assets/bootstrap/transition.js?body=1" for 127.0.0.1 at 2014-05-02 16:06:28 +0100
+
+
+Started GET "/assets/bootstrap/scrollspy.js?body=1" for 127.0.0.1 at 2014-05-02 16:06:28 +0100
+
+
+Started GET "/assets/bootstrap/modal.js?body=1" for 127.0.0.1 at 2014-05-02 16:06:28 +0100
+
+
+Started GET "/assets/bootstrap/tooltip.js?body=1" for 127.0.0.1 at 2014-05-02 16:06:28 +0100
+
+
+Started GET "/assets/bootstrap/popover.js?body=1" for 127.0.0.1 at 2014-05-02 16:06:28 +0100
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2014-05-02 16:06:28 +0100
+
+
+Started GET "/assets/canvas2image.js?body=1" for 127.0.0.1 at 2014-05-02 16:06:28 +0100
+
+
+Started GET "/assets/canvassaver.js?body=1" for 127.0.0.1 at 2014-05-02 16:06:28 +0100
+
+
+Started GET "/assets/charts.js?body=1" for 127.0.0.1 at 2014-05-02 16:06:28 +0100
+
+
+Started GET "/assets/dashboards.js?body=1" for 127.0.0.1 at 2014-05-02 16:06:28 +0100
+
+
+Started GET "/assets/handsontable.js?body=1" for 127.0.0.1 at 2014-05-02 16:06:28 +0100
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2014-05-02 16:06:28 +0100
+
+
+Started GET "/assets/jquery.countdown.js?body=1" for 127.0.0.1 at 2014-05-02 16:06:28 +0100
+
+
+Started GET "/assets/jquery.scrollTo-1.4.3.1.min.js?body=1" for 127.0.0.1 at 2014-05-02 16:06:29 +0100
+
+
+Started GET "/assets/jquery.scrolldeck.js?body=1" for 127.0.0.1 at 2014-05-02 16:06:29 +0100
+
+
+Started GET "/assets/jquery.scrollorama.js?body=1" for 127.0.0.1 at 2014-05-02 16:06:29 +0100
+
+
+Started GET "/assets/landing-page.js?body=1" for 127.0.0.1 at 2014-05-02 16:06:29 +0100
+
+
+Started GET "/assets/widgets.js?body=1" for 127.0.0.1 at 2014-05-02 16:06:29 +0100
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-05-02 16:06:29 +0100
+
+
+Started GET "/assets/chartkick.js?body=1" for 127.0.0.1 at 2014-05-02 16:06:29 +0100
+
+
+Started GET "/assets/navbar/logo_pic.png" for 127.0.0.1 at 2014-05-02 16:06:29 +0100
+
+
+Started GET "/charts/new" for 127.0.0.1 at 2014-05-02 16:15:51 +0100
+Processing by ChartsController#new as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = 4  ORDER BY "users"."id" ASC LIMIT 1[0m
+  Rendered charts/new.html.erb within layouts/application (8.3ms)
+  Rendered layouts/_navbar.html.erb (0.6ms)
+Completed 200 OK in 123ms (Views: 98.4ms | ActiveRecord: 3.9ms)
+
+
+Started GET "/assets/reset.css?body=1" for 127.0.0.1 at 2014-05-02 16:15:51 +0100
+
+
+Started GET "/assets/bootstrap.css?body=1" for 127.0.0.1 at 2014-05-02 16:15:51 +0100
+
+
+Started GET "/assets/font-awesome.css?body=1" for 127.0.0.1 at 2014-05-02 16:15:51 +0100
+
+
+Started GET "/assets/bootstrap-social.css?body=1" for 127.0.0.1 at 2014-05-02 16:15:51 +0100
+
+
+Started GET "/assets/charts.css?body=1" for 127.0.0.1 at 2014-05-02 16:15:51 +0100
+
+
+Started GET "/assets/dashboards.css?body=1" for 127.0.0.1 at 2014-05-02 16:15:51 +0100
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2014-05-02 16:15:51 +0100
+
+
+Started GET "/assets/navbar.css?body=1" for 127.0.0.1 at 2014-05-02 16:15:51 +0100
+
+
+Started GET "/assets/signing.css?body=1" for 127.0.0.1 at 2014-05-02 16:15:51 +0100
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-05-02 16:15:51 +0100
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-05-02 16:15:51 +0100
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-05-02 16:15:51 +0100
+
+
+Started GET "/assets/jquery.easing.min.js?body=1" for 127.0.0.1 at 2014-05-02 16:15:51 +0100
+
+
+Started GET "/assets/bootstrap/affix.js?body=1" for 127.0.0.1 at 2014-05-02 16:15:51 +0100
+
+
+Started GET "/assets/bootstrap/alert.js?body=1" for 127.0.0.1 at 2014-05-02 16:15:51 +0100
+
+
+Started GET "/assets/bootstrap/button.js?body=1" for 127.0.0.1 at 2014-05-02 16:15:51 +0100
+
+
+Started GET "/assets/bootstrap/carousel.js?body=1" for 127.0.0.1 at 2014-05-02 16:15:51 +0100
+
+
+Started GET "/assets/bootstrap/collapse.js?body=1" for 127.0.0.1 at 2014-05-02 16:15:51 +0100
+
+
+Started GET "/assets/bootstrap/dropdown.js?body=1" for 127.0.0.1 at 2014-05-02 16:15:51 +0100
+
+
+Started GET "/assets/bootstrap/tab.js?body=1" for 127.0.0.1 at 2014-05-02 16:15:51 +0100
+
+
+Started GET "/assets/bootstrap/transition.js?body=1" for 127.0.0.1 at 2014-05-02 16:15:51 +0100
+
+
+Started GET "/assets/bootstrap/scrollspy.js?body=1" for 127.0.0.1 at 2014-05-02 16:15:51 +0100
+
+
+Started GET "/assets/bootstrap/modal.js?body=1" for 127.0.0.1 at 2014-05-02 16:15:51 +0100
+
+
+Started GET "/assets/bootstrap/tooltip.js?body=1" for 127.0.0.1 at 2014-05-02 16:15:51 +0100
+
+
+Started GET "/assets/bootstrap/popover.js?body=1" for 127.0.0.1 at 2014-05-02 16:15:51 +0100
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2014-05-02 16:15:51 +0100
+
+
+Started GET "/assets/canvas2image.js?body=1" for 127.0.0.1 at 2014-05-02 16:15:51 +0100
+
+
+Started GET "/assets/canvassaver.js?body=1" for 127.0.0.1 at 2014-05-02 16:15:51 +0100
+
+
+Started GET "/assets/charts.js?body=1" for 127.0.0.1 at 2014-05-02 16:15:51 +0100
+
+
+Started GET "/assets/dashboards.js?body=1" for 127.0.0.1 at 2014-05-02 16:15:51 +0100
+
+
+Started GET "/assets/handsontable.js?body=1" for 127.0.0.1 at 2014-05-02 16:15:51 +0100
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2014-05-02 16:15:51 +0100
+
+
+Started GET "/assets/jquery.countdown.js?body=1" for 127.0.0.1 at 2014-05-02 16:15:51 +0100
+
+
+Started GET "/assets/jquery.scrollTo-1.4.3.1.min.js?body=1" for 127.0.0.1 at 2014-05-02 16:15:51 +0100
+
+
+Started GET "/assets/jquery.scrolldeck.js?body=1" for 127.0.0.1 at 2014-05-02 16:15:51 +0100
+
+
+Started GET "/assets/jquery.scrollorama.js?body=1" for 127.0.0.1 at 2014-05-02 16:15:51 +0100
+
+
+Started GET "/assets/landing-page.js?body=1" for 127.0.0.1 at 2014-05-02 16:15:51 +0100
+
+
+Started GET "/assets/widgets.js?body=1" for 127.0.0.1 at 2014-05-02 16:15:51 +0100
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-05-02 16:15:51 +0100
+
+
+Started GET "/assets/chartkick.js?body=1" for 127.0.0.1 at 2014-05-02 16:15:51 +0100
+
+
+Started GET "/assets/navbar/logo_pic.png" for 127.0.0.1 at 2014-05-02 16:15:51 +0100
+
+
+Started GET "/charts/new" for 127.0.0.1 at 2014-05-02 16:15:54 +0100
+Processing by ChartsController#new as HTML
+  [1m[35mUser Load (0.5ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = 4  ORDER BY "users"."id" ASC LIMIT 1
+  Rendered charts/new.html.erb within layouts/application (4.0ms)
+  Rendered layouts/_navbar.html.erb (0.5ms)
+Completed 200 OK in 96ms (Views: 92.6ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/reset.css?body=1" for 127.0.0.1 at 2014-05-02 16:15:54 +0100
+
+
+Started GET "/assets/bootstrap.css?body=1" for 127.0.0.1 at 2014-05-02 16:15:54 +0100
+
+
+Started GET "/assets/font-awesome.css?body=1" for 127.0.0.1 at 2014-05-02 16:15:54 +0100
+
+
+Started GET "/assets/bootstrap-social.css?body=1" for 127.0.0.1 at 2014-05-02 16:15:54 +0100
+
+
+Started GET "/assets/charts.css?body=1" for 127.0.0.1 at 2014-05-02 16:15:54 +0100
+
+
+Started GET "/assets/dashboards.css?body=1" for 127.0.0.1 at 2014-05-02 16:15:54 +0100
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2014-05-02 16:15:54 +0100
+
+
+Started GET "/assets/navbar.css?body=1" for 127.0.0.1 at 2014-05-02 16:15:55 +0100
+
+
+Started GET "/assets/signing.css?body=1" for 127.0.0.1 at 2014-05-02 16:15:55 +0100
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-05-02 16:15:55 +0100
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-05-02 16:15:55 +0100
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-05-02 16:15:55 +0100
+
+
+Started GET "/assets/jquery.easing.min.js?body=1" for 127.0.0.1 at 2014-05-02 16:15:55 +0100
+
+
+Started GET "/assets/bootstrap/affix.js?body=1" for 127.0.0.1 at 2014-05-02 16:15:55 +0100
+
+
+Started GET "/assets/bootstrap/alert.js?body=1" for 127.0.0.1 at 2014-05-02 16:15:55 +0100
+
+
+Started GET "/assets/bootstrap/button.js?body=1" for 127.0.0.1 at 2014-05-02 16:15:55 +0100
+
+
+Started GET "/assets/bootstrap/carousel.js?body=1" for 127.0.0.1 at 2014-05-02 16:15:55 +0100
+
+
+Started GET "/assets/bootstrap/collapse.js?body=1" for 127.0.0.1 at 2014-05-02 16:15:55 +0100
+
+
+Started GET "/assets/bootstrap/dropdown.js?body=1" for 127.0.0.1 at 2014-05-02 16:15:55 +0100
+
+
+Started GET "/assets/bootstrap/tab.js?body=1" for 127.0.0.1 at 2014-05-02 16:15:55 +0100
+
+
+Started GET "/assets/bootstrap/transition.js?body=1" for 127.0.0.1 at 2014-05-02 16:15:55 +0100
+
+
+Started GET "/assets/bootstrap/scrollspy.js?body=1" for 127.0.0.1 at 2014-05-02 16:15:55 +0100
+
+
+Started GET "/assets/bootstrap/modal.js?body=1" for 127.0.0.1 at 2014-05-02 16:15:55 +0100
+
+
+Started GET "/assets/bootstrap/tooltip.js?body=1" for 127.0.0.1 at 2014-05-02 16:15:55 +0100
+
+
+Started GET "/assets/bootstrap/popover.js?body=1" for 127.0.0.1 at 2014-05-02 16:15:55 +0100
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2014-05-02 16:15:55 +0100
+
+
+Started GET "/assets/canvas2image.js?body=1" for 127.0.0.1 at 2014-05-02 16:15:55 +0100
+
+
+Started GET "/assets/canvassaver.js?body=1" for 127.0.0.1 at 2014-05-02 16:15:55 +0100
+
+
+Started GET "/assets/charts.js?body=1" for 127.0.0.1 at 2014-05-02 16:15:55 +0100
+
+
+Started GET "/assets/dashboards.js?body=1" for 127.0.0.1 at 2014-05-02 16:15:55 +0100
+
+
+Started GET "/assets/handsontable.js?body=1" for 127.0.0.1 at 2014-05-02 16:15:55 +0100
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2014-05-02 16:15:55 +0100
+
+
+Started GET "/assets/jquery.countdown.js?body=1" for 127.0.0.1 at 2014-05-02 16:15:55 +0100
+
+
+Started GET "/assets/jquery.scrollTo-1.4.3.1.min.js?body=1" for 127.0.0.1 at 2014-05-02 16:15:55 +0100
+
+
+Started GET "/assets/jquery.scrolldeck.js?body=1" for 127.0.0.1 at 2014-05-02 16:15:55 +0100
+
+
+Started GET "/assets/jquery.scrollorama.js?body=1" for 127.0.0.1 at 2014-05-02 16:15:55 +0100
+
+
+Started GET "/assets/landing-page.js?body=1" for 127.0.0.1 at 2014-05-02 16:15:55 +0100
+
+
+Started GET "/assets/widgets.js?body=1" for 127.0.0.1 at 2014-05-02 16:15:55 +0100
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-05-02 16:15:55 +0100
+
+
+Started GET "/assets/chartkick.js?body=1" for 127.0.0.1 at 2014-05-02 16:15:55 +0100
+
+
+Started GET "/assets/navbar/logo_pic.png" for 127.0.0.1 at 2014-05-02 16:15:55 +0100
+
+
+Started GET "/assets/fontawesome-webfont.woff?v=4.0.3" for 127.0.0.1 at 2014-05-02 16:15:56 +0100
+
+
+Started GET "/charts/new" for 127.0.0.1 at 2014-05-02 16:16:01 +0100
+Processing by ChartsController#new as HTML
+  [1m[36mUser Load (1.1ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = 4  ORDER BY "users"."id" ASC LIMIT 1[0m
+  Rendered charts/new.html.erb within layouts/application (4.5ms)
+  Rendered layouts/_navbar.html.erb (0.5ms)
+Completed 200 OK in 110ms (Views: 106.3ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/assets/reset.css?body=1" for 127.0.0.1 at 2014-05-02 16:16:01 +0100
+
+
+Started GET "/assets/bootstrap.css?body=1" for 127.0.0.1 at 2014-05-02 16:16:01 +0100
+
+
+Started GET "/assets/font-awesome.css?body=1" for 127.0.0.1 at 2014-05-02 16:16:01 +0100
+
+
+Started GET "/assets/bootstrap-social.css?body=1" for 127.0.0.1 at 2014-05-02 16:16:01 +0100
+
+
+Started GET "/assets/charts.css?body=1" for 127.0.0.1 at 2014-05-02 16:16:01 +0100
+
+
+Started GET "/assets/dashboards.css?body=1" for 127.0.0.1 at 2014-05-02 16:16:01 +0100
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2014-05-02 16:16:01 +0100
+
+
+Started GET "/assets/navbar.css?body=1" for 127.0.0.1 at 2014-05-02 16:16:01 +0100
+
+
+Started GET "/assets/signing.css?body=1" for 127.0.0.1 at 2014-05-02 16:16:01 +0100
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-05-02 16:16:01 +0100
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-05-02 16:16:01 +0100
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-05-02 16:16:01 +0100
+
+
+Started GET "/assets/jquery.easing.min.js?body=1" for 127.0.0.1 at 2014-05-02 16:16:01 +0100
+
+
+Started GET "/assets/bootstrap/affix.js?body=1" for 127.0.0.1 at 2014-05-02 16:16:01 +0100
+
+
+Started GET "/assets/bootstrap/alert.js?body=1" for 127.0.0.1 at 2014-05-02 16:16:01 +0100
+
+
+Started GET "/assets/bootstrap/button.js?body=1" for 127.0.0.1 at 2014-05-02 16:16:01 +0100
+
+
+Started GET "/assets/bootstrap/carousel.js?body=1" for 127.0.0.1 at 2014-05-02 16:16:01 +0100
+
+
+Started GET "/assets/bootstrap/collapse.js?body=1" for 127.0.0.1 at 2014-05-02 16:16:01 +0100
+
+
+Started GET "/assets/bootstrap/dropdown.js?body=1" for 127.0.0.1 at 2014-05-02 16:16:01 +0100
+
+
+Started GET "/assets/bootstrap/tab.js?body=1" for 127.0.0.1 at 2014-05-02 16:16:01 +0100
+
+
+Started GET "/assets/bootstrap/transition.js?body=1" for 127.0.0.1 at 2014-05-02 16:16:01 +0100
+
+
+Started GET "/assets/bootstrap/scrollspy.js?body=1" for 127.0.0.1 at 2014-05-02 16:16:01 +0100
+
+
+Started GET "/assets/bootstrap/modal.js?body=1" for 127.0.0.1 at 2014-05-02 16:16:01 +0100
+
+
+Started GET "/assets/bootstrap/tooltip.js?body=1" for 127.0.0.1 at 2014-05-02 16:16:01 +0100
+
+
+Started GET "/assets/bootstrap/popover.js?body=1" for 127.0.0.1 at 2014-05-02 16:16:01 +0100
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2014-05-02 16:16:01 +0100
+
+
+Started GET "/assets/canvas2image.js?body=1" for 127.0.0.1 at 2014-05-02 16:16:01 +0100
+
+
+Started GET "/assets/canvassaver.js?body=1" for 127.0.0.1 at 2014-05-02 16:16:01 +0100
+
+
+Started GET "/assets/charts.js?body=1" for 127.0.0.1 at 2014-05-02 16:16:01 +0100
+
+
+Started GET "/assets/dashboards.js?body=1" for 127.0.0.1 at 2014-05-02 16:16:01 +0100
+
+
+Started GET "/assets/handsontable.js?body=1" for 127.0.0.1 at 2014-05-02 16:16:01 +0100
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2014-05-02 16:16:01 +0100
+
+
+Started GET "/assets/jquery.countdown.js?body=1" for 127.0.0.1 at 2014-05-02 16:16:01 +0100
+
+
+Started GET "/assets/jquery.scrollTo-1.4.3.1.min.js?body=1" for 127.0.0.1 at 2014-05-02 16:16:01 +0100
+
+
+Started GET "/assets/jquery.scrolldeck.js?body=1" for 127.0.0.1 at 2014-05-02 16:16:01 +0100
+
+
+Started GET "/assets/jquery.scrollorama.js?body=1" for 127.0.0.1 at 2014-05-02 16:16:01 +0100
+
+
+Started GET "/assets/landing-page.js?body=1" for 127.0.0.1 at 2014-05-02 16:16:01 +0100
+
+
+Started GET "/assets/widgets.js?body=1" for 127.0.0.1 at 2014-05-02 16:16:01 +0100
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-05-02 16:16:01 +0100
+
+
+Started GET "/assets/chartkick.js?body=1" for 127.0.0.1 at 2014-05-02 16:16:01 +0100
+
+
+Started GET "/assets/navbar/logo_pic.png" for 127.0.0.1 at 2014-05-02 16:16:01 +0100
+
+
+Started POST "/charts" for 127.0.0.1 at 2014-05-02 16:16:26 +0100
+Processing by ChartsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"hCU15sCF5WP4oodEaiikwsljRle5f5yOTpHdVgpGzUw=", "chart"=>{"name"=>"Test", "dashboard_titles"=>"asdf", "chart_type"=>"line_chart", "colorscheme"=>"default", "table_data"=>"\"stuff,Maserati,Mazda,Mercedes,Mini,Mitsubishi\\n2009,0,2941,4303,354,5814\\n2010,5,2905,2867,412,5284\\n2011,4,2517,4822,552,6127\\n2012,2,2422,5399,776,4151\\n\""}, "twitter"=>"", "commit"=>"Generate"}
+  [1m[35mUser Load (0.5ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = 4  ORDER BY "users"."id" ASC LIMIT 1
+  [1m[36m (0.4ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (1.0ms)[0m  INSERT INTO "charts" ("chart_type", "colorscheme", "created_at", "name", "updated_at", "user_id") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"  [["chart_type", 1], ["colorscheme", 0], ["created_at", "2014-05-02 15:16:26.367359"], ["name", "Test"], ["updated_at", "2014-05-02 15:16:26.367359"], ["user_id", 4]]
+  [1m[36m (0.4ms)[0m  [1mCOMMIT[0m
+Redirected to http://localhost:3000/charts/16
+Completed 302 Found in 10ms (ActiveRecord: 2.4ms)
+
+
+Started GET "/charts/16" for 127.0.0.1 at 2014-05-02 16:16:26 +0100
+Processing by ChartsController#show as HTML
+  Parameters: {"id"=>"16"}
+  [1m[35mChart Load (0.4ms)[0m  SELECT  "charts".* FROM "charts"  WHERE "charts"."id" = $1 LIMIT 1  [["id", 16]]
+  [1m[36mDashboard Exists (0.4ms)[0m  [1mSELECT  1 AS one FROM "dashboards" INNER JOIN "charts_dashboards" ON "dashboards"."id" = "charts_dashboards"."dashboard_id" WHERE "charts_dashboards"."chart_id" = $1 LIMIT 1[0m  [["chart_id", 16]]
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = $1 LIMIT 1  [["id", 4]]
+  Rendered charts/_chart.html.erb (17.7ms)
+  Rendered layouts/_share.html.erb (0.1ms)
+  [1m[36mUser Load (0.5ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = 4  ORDER BY "users"."id" ASC LIMIT 1[0m
+  Rendered charts/show.html.erb within layouts/application (22.3ms)
+  Rendered layouts/_navbar.html.erb (1.0ms)
+Completed 200 OK in 115ms (Views: 109.1ms | ActiveRecord: 4.2ms)
+
+
+Started GET "/assets/reset.css?body=1" for 127.0.0.1 at 2014-05-02 16:16:26 +0100
+
+
+Started GET "/assets/bootstrap.css?body=1" for 127.0.0.1 at 2014-05-02 16:16:26 +0100
+
+
+Started GET "/assets/font-awesome.css?body=1" for 127.0.0.1 at 2014-05-02 16:16:26 +0100
+
+
+Started GET "/assets/bootstrap-social.css?body=1" for 127.0.0.1 at 2014-05-02 16:16:26 +0100
+
+
+Started GET "/assets/charts.css?body=1" for 127.0.0.1 at 2014-05-02 16:16:26 +0100
+
+
+Started GET "/assets/dashboards.css?body=1" for 127.0.0.1 at 2014-05-02 16:16:26 +0100
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2014-05-02 16:16:26 +0100
+
+
+Started GET "/assets/navbar.css?body=1" for 127.0.0.1 at 2014-05-02 16:16:26 +0100
+
+
+Started GET "/assets/signing.css?body=1" for 127.0.0.1 at 2014-05-02 16:16:26 +0100
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-05-02 16:16:26 +0100
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-05-02 16:16:26 +0100
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-05-02 16:16:26 +0100
+
+
+Started GET "/assets/jquery.easing.min.js?body=1" for 127.0.0.1 at 2014-05-02 16:16:26 +0100
+
+
+Started GET "/assets/bootstrap/affix.js?body=1" for 127.0.0.1 at 2014-05-02 16:16:26 +0100
+
+
+Started GET "/assets/bootstrap/alert.js?body=1" for 127.0.0.1 at 2014-05-02 16:16:26 +0100
+
+
+Started GET "/assets/bootstrap/button.js?body=1" for 127.0.0.1 at 2014-05-02 16:16:26 +0100
+
+
+Started GET "/assets/bootstrap/carousel.js?body=1" for 127.0.0.1 at 2014-05-02 16:16:26 +0100
+
+
+Started GET "/assets/bootstrap/collapse.js?body=1" for 127.0.0.1 at 2014-05-02 16:16:26 +0100
+
+
+Started GET "/assets/bootstrap/dropdown.js?body=1" for 127.0.0.1 at 2014-05-02 16:16:26 +0100
+
+
+Started GET "/assets/bootstrap/tab.js?body=1" for 127.0.0.1 at 2014-05-02 16:16:26 +0100
+
+
+Started GET "/assets/bootstrap/transition.js?body=1" for 127.0.0.1 at 2014-05-02 16:16:26 +0100
+
+
+Started GET "/assets/bootstrap/scrollspy.js?body=1" for 127.0.0.1 at 2014-05-02 16:16:26 +0100
+
+
+Started GET "/assets/bootstrap/modal.js?body=1" for 127.0.0.1 at 2014-05-02 16:16:26 +0100
+
+
+Started GET "/assets/bootstrap/tooltip.js?body=1" for 127.0.0.1 at 2014-05-02 16:16:26 +0100
+
+
+Started GET "/assets/bootstrap/popover.js?body=1" for 127.0.0.1 at 2014-05-02 16:16:26 +0100
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2014-05-02 16:16:26 +0100
+
+
+Started GET "/assets/canvas2image.js?body=1" for 127.0.0.1 at 2014-05-02 16:16:26 +0100
+
+
+Started GET "/assets/canvassaver.js?body=1" for 127.0.0.1 at 2014-05-02 16:16:26 +0100
+
+
+Started GET "/assets/charts.js?body=1" for 127.0.0.1 at 2014-05-02 16:16:26 +0100
+
+
+Started GET "/assets/dashboards.js?body=1" for 127.0.0.1 at 2014-05-02 16:16:26 +0100
+
+
+Started GET "/assets/handsontable.js?body=1" for 127.0.0.1 at 2014-05-02 16:16:26 +0100
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2014-05-02 16:16:26 +0100
+
+
+Started GET "/assets/jquery.countdown.js?body=1" for 127.0.0.1 at 2014-05-02 16:16:26 +0100
+
+
+Started GET "/assets/jquery.scrollTo-1.4.3.1.min.js?body=1" for 127.0.0.1 at 2014-05-02 16:16:26 +0100
+
+
+Started GET "/assets/jquery.scrolldeck.js?body=1" for 127.0.0.1 at 2014-05-02 16:16:26 +0100
+
+
+Started GET "/assets/jquery.scrollorama.js?body=1" for 127.0.0.1 at 2014-05-02 16:16:26 +0100
+
+
+Started GET "/assets/landing-page.js?body=1" for 127.0.0.1 at 2014-05-02 16:16:26 +0100
+
+
+Started GET "/assets/widgets.js?body=1" for 127.0.0.1 at 2014-05-02 16:16:26 +0100
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-05-02 16:16:26 +0100
+
+
+Started GET "/assets/chartkick.js?body=1" for 127.0.0.1 at 2014-05-02 16:16:26 +0100
+
+
+Started GET "/assets/navbar/logo_pic.png" for 127.0.0.1 at 2014-05-02 16:16:26 +0100
+
+
+Started GET "/charts/16.json" for 127.0.0.1 at 2014-05-02 16:16:26 +0100
+Processing by ChartsController#show as JSON
+  Parameters: {"id"=>"16"}
+  [1m[35mChart Load (0.3ms)[0m  SELECT  "charts".* FROM "charts"  WHERE "charts"."id" = $1 LIMIT 1  [["id", 16]]
+  [1m[36mSeries Load (0.3ms)[0m  [1mSELECT "series".* FROM "series"  WHERE "series"."chart_id" = $1[0m  [["chart_id", 16]]
+Completed 200 OK in 10ms (Views: 0.3ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/charts/new" for 127.0.0.1 at 2014-05-02 16:17:19 +0100
+Processing by ChartsController#new as HTML
+  [1m[35mUser Load (0.4ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = 4  ORDER BY "users"."id" ASC LIMIT 1
+  Rendered charts/new.html.erb within layouts/application (8.9ms)
+  Rendered layouts/_navbar.html.erb (0.6ms)
+Completed 200 OK in 131ms (Views: 103.2ms | ActiveRecord: 3.8ms)
+
+
+Started GET "/assets/reset.css?body=1" for 127.0.0.1 at 2014-05-02 16:17:19 +0100
+
+
+Started GET "/assets/bootstrap.css?body=1" for 127.0.0.1 at 2014-05-02 16:17:19 +0100
+
+
+Started GET "/assets/font-awesome.css?body=1" for 127.0.0.1 at 2014-05-02 16:17:19 +0100
+
+
+Started GET "/assets/bootstrap-social.css?body=1" for 127.0.0.1 at 2014-05-02 16:17:19 +0100
+
+
+Started GET "/assets/charts.css?body=1" for 127.0.0.1 at 2014-05-02 16:17:19 +0100
+
+
+Started GET "/assets/dashboards.css?body=1" for 127.0.0.1 at 2014-05-02 16:17:19 +0100
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2014-05-02 16:17:19 +0100
+
+
+Started GET "/assets/navbar.css?body=1" for 127.0.0.1 at 2014-05-02 16:17:19 +0100
+
+
+Started GET "/assets/signing.css?body=1" for 127.0.0.1 at 2014-05-02 16:17:19 +0100
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-05-02 16:17:19 +0100
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-05-02 16:17:19 +0100
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-05-02 16:17:19 +0100
+
+
+Started GET "/assets/jquery.easing.min.js?body=1" for 127.0.0.1 at 2014-05-02 16:17:19 +0100
+
+
+Started GET "/assets/bootstrap/affix.js?body=1" for 127.0.0.1 at 2014-05-02 16:17:19 +0100
+
+
+Started GET "/assets/bootstrap/alert.js?body=1" for 127.0.0.1 at 2014-05-02 16:17:19 +0100
+
+
+Started GET "/assets/bootstrap/button.js?body=1" for 127.0.0.1 at 2014-05-02 16:17:19 +0100
+
+
+Started GET "/assets/bootstrap/carousel.js?body=1" for 127.0.0.1 at 2014-05-02 16:17:19 +0100
+
+
+Started GET "/assets/bootstrap/collapse.js?body=1" for 127.0.0.1 at 2014-05-02 16:17:19 +0100
+
+
+Started GET "/assets/bootstrap/dropdown.js?body=1" for 127.0.0.1 at 2014-05-02 16:17:19 +0100
+
+
+Started GET "/assets/bootstrap/tab.js?body=1" for 127.0.0.1 at 2014-05-02 16:17:19 +0100
+
+
+Started GET "/assets/bootstrap/transition.js?body=1" for 127.0.0.1 at 2014-05-02 16:17:19 +0100
+
+
+Started GET "/assets/bootstrap/scrollspy.js?body=1" for 127.0.0.1 at 2014-05-02 16:17:19 +0100
+
+
+Started GET "/assets/bootstrap/modal.js?body=1" for 127.0.0.1 at 2014-05-02 16:17:19 +0100
+
+
+Started GET "/assets/bootstrap/tooltip.js?body=1" for 127.0.0.1 at 2014-05-02 16:17:19 +0100
+
+
+Started GET "/assets/bootstrap/popover.js?body=1" for 127.0.0.1 at 2014-05-02 16:17:19 +0100
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2014-05-02 16:17:19 +0100
+
+
+Started GET "/assets/canvas2image.js?body=1" for 127.0.0.1 at 2014-05-02 16:17:19 +0100
+
+
+Started GET "/assets/canvassaver.js?body=1" for 127.0.0.1 at 2014-05-02 16:17:19 +0100
+
+
+Started GET "/assets/charts.js?body=1" for 127.0.0.1 at 2014-05-02 16:17:19 +0100
+
+
+Started GET "/assets/dashboards.js?body=1" for 127.0.0.1 at 2014-05-02 16:17:19 +0100
+
+
+Started GET "/assets/handsontable.js?body=1" for 127.0.0.1 at 2014-05-02 16:17:19 +0100
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2014-05-02 16:17:19 +0100
+
+
+Started GET "/assets/jquery.countdown.js?body=1" for 127.0.0.1 at 2014-05-02 16:17:19 +0100
+
+
+Started GET "/assets/jquery.scrollTo-1.4.3.1.min.js?body=1" for 127.0.0.1 at 2014-05-02 16:17:19 +0100
+
+
+Started GET "/assets/jquery.scrolldeck.js?body=1" for 127.0.0.1 at 2014-05-02 16:17:19 +0100
+
+
+Started GET "/assets/jquery.scrollorama.js?body=1" for 127.0.0.1 at 2014-05-02 16:17:19 +0100
+
+
+Started GET "/assets/landing-page.js?body=1" for 127.0.0.1 at 2014-05-02 16:17:19 +0100
+
+
+Started GET "/assets/widgets.js?body=1" for 127.0.0.1 at 2014-05-02 16:17:19 +0100
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-05-02 16:17:19 +0100
+
+
+Started GET "/assets/chartkick.js?body=1" for 127.0.0.1 at 2014-05-02 16:17:19 +0100
+
+
+Started GET "/assets/navbar/logo_pic.png" for 127.0.0.1 at 2014-05-02 16:17:19 +0100
+
+
+Started POST "/charts" for 127.0.0.1 at 2014-05-02 16:17:34 +0100
+Processing by ChartsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"hCU15sCF5WP4oodEaiikwsljRle5f5yOTpHdVgpGzUw=", "chart"=>{"name"=>"Tesstt", "dashboard_titles"=>"asb", "chart_type"=>"line_chart", "colorscheme"=>"default", "table_data"=>"\"stuff,Maserati,Mazda,Mercedes,Mini,Mitsubishi\\n2009,0,2941,4303,354,5814\\n2010,5,2905,2867,412,5284\\n2011,4,2517,4822,552,6127\\n2012,2,2422,5399,776,4151\\n\""}, "twitter"=>"", "commit"=>"Generate"}
+  [1m[36mUser Load (1.2ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = 4  ORDER BY "users"."id" ASC LIMIT 1[0m
+Completed 500 Internal Server Error in 4ms
+
+RuntimeError (YOOOOO):
+  app/models/chart.rb:61:in `table_data='
+  app/controllers/charts_controller.rb:10:in `create'
+
+
+  Rendered /Users/tobyretallick/.rvm/gems/ruby-2.1.0/gems/actionpack-4.1.0/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.8ms)
+  Rendered /Users/tobyretallick/.rvm/gems/ruby-2.1.0/gems/actionpack-4.1.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.6ms)
+  Rendered /Users/tobyretallick/.rvm/gems/ruby-2.1.0/gems/actionpack-4.1.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.3ms)
+  Rendered /Users/tobyretallick/.rvm/gems/ruby-2.1.0/gems/actionpack-4.1.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (17.6ms)
+
+
+Started GET "/charts/new" for 127.0.0.1 at 2014-05-02 16:18:07 +0100
+Processing by ChartsController#new as HTML
+  [1m[35mUser Load (0.6ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = 4  ORDER BY "users"."id" ASC LIMIT 1
+  Rendered charts/new.html.erb within layouts/application (11.0ms)
+  Rendered layouts/_navbar.html.erb (0.6ms)
+Completed 200 OK in 129ms (Views: 101.2ms | ActiveRecord: 4.2ms)
+
+
+Started GET "/assets/reset.css?body=1" for 127.0.0.1 at 2014-05-02 16:18:07 +0100
+
+
+Started GET "/assets/bootstrap.css?body=1" for 127.0.0.1 at 2014-05-02 16:18:07 +0100
+
+
+Started GET "/assets/font-awesome.css?body=1" for 127.0.0.1 at 2014-05-02 16:18:07 +0100
+
+
+Started GET "/assets/bootstrap-social.css?body=1" for 127.0.0.1 at 2014-05-02 16:18:07 +0100
+
+
+Started GET "/assets/charts.css?body=1" for 127.0.0.1 at 2014-05-02 16:18:07 +0100
+
+
+Started GET "/assets/dashboards.css?body=1" for 127.0.0.1 at 2014-05-02 16:18:07 +0100
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2014-05-02 16:18:07 +0100
+
+
+Started GET "/assets/navbar.css?body=1" for 127.0.0.1 at 2014-05-02 16:18:07 +0100
+
+
+Started GET "/assets/signing.css?body=1" for 127.0.0.1 at 2014-05-02 16:18:07 +0100
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-05-02 16:18:07 +0100
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-05-02 16:18:07 +0100
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-05-02 16:18:07 +0100
+
+
+Started GET "/assets/jquery.easing.min.js?body=1" for 127.0.0.1 at 2014-05-02 16:18:07 +0100
+
+
+Started GET "/assets/bootstrap/affix.js?body=1" for 127.0.0.1 at 2014-05-02 16:18:07 +0100
+
+
+Started GET "/assets/bootstrap/alert.js?body=1" for 127.0.0.1 at 2014-05-02 16:18:07 +0100
+
+
+Started GET "/assets/bootstrap/button.js?body=1" for 127.0.0.1 at 2014-05-02 16:18:07 +0100
+
+
+Started GET "/assets/bootstrap/carousel.js?body=1" for 127.0.0.1 at 2014-05-02 16:18:07 +0100
+
+
+Started GET "/assets/bootstrap/collapse.js?body=1" for 127.0.0.1 at 2014-05-02 16:18:07 +0100
+
+
+Started GET "/assets/bootstrap/dropdown.js?body=1" for 127.0.0.1 at 2014-05-02 16:18:07 +0100
+
+
+Started GET "/assets/bootstrap/tab.js?body=1" for 127.0.0.1 at 2014-05-02 16:18:07 +0100
+
+
+Started GET "/assets/bootstrap/transition.js?body=1" for 127.0.0.1 at 2014-05-02 16:18:07 +0100
+
+
+Started GET "/assets/bootstrap/scrollspy.js?body=1" for 127.0.0.1 at 2014-05-02 16:18:07 +0100
+
+
+Started GET "/assets/bootstrap/modal.js?body=1" for 127.0.0.1 at 2014-05-02 16:18:07 +0100
+
+
+Started GET "/assets/bootstrap/tooltip.js?body=1" for 127.0.0.1 at 2014-05-02 16:18:07 +0100
+
+
+Started GET "/assets/bootstrap/popover.js?body=1" for 127.0.0.1 at 2014-05-02 16:18:07 +0100
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2014-05-02 16:18:07 +0100
+
+
+Started GET "/assets/canvas2image.js?body=1" for 127.0.0.1 at 2014-05-02 16:18:07 +0100
+
+
+Started GET "/assets/canvassaver.js?body=1" for 127.0.0.1 at 2014-05-02 16:18:07 +0100
+
+
+Started GET "/assets/charts.js?body=1" for 127.0.0.1 at 2014-05-02 16:18:07 +0100
+
+
+Started GET "/assets/dashboards.js?body=1" for 127.0.0.1 at 2014-05-02 16:18:07 +0100
+
+
+Started GET "/assets/handsontable.js?body=1" for 127.0.0.1 at 2014-05-02 16:18:07 +0100
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2014-05-02 16:18:07 +0100
+
+
+Started GET "/assets/jquery.countdown.js?body=1" for 127.0.0.1 at 2014-05-02 16:18:07 +0100
+
+
+Started GET "/assets/jquery.scrollTo-1.4.3.1.min.js?body=1" for 127.0.0.1 at 2014-05-02 16:18:07 +0100
+
+
+Started GET "/assets/jquery.scrolldeck.js?body=1" for 127.0.0.1 at 2014-05-02 16:18:07 +0100
+
+
+Started GET "/assets/jquery.scrollorama.js?body=1" for 127.0.0.1 at 2014-05-02 16:18:07 +0100
+
+
+Started GET "/assets/landing-page.js?body=1" for 127.0.0.1 at 2014-05-02 16:18:07 +0100
+
+
+Started GET "/assets/widgets.js?body=1" for 127.0.0.1 at 2014-05-02 16:18:07 +0100
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-05-02 16:18:07 +0100
+
+
+Started GET "/assets/chartkick.js?body=1" for 127.0.0.1 at 2014-05-02 16:18:07 +0100
+
+
+Started GET "/assets/navbar/logo_pic.png" for 127.0.0.1 at 2014-05-02 16:18:07 +0100
+
+
+Started POST "/charts" for 127.0.0.1 at 2014-05-02 16:18:18 +0100
+Processing by ChartsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"hCU15sCF5WP4oodEaiikwsljRle5f5yOTpHdVgpGzUw=", "chart"=>{"name"=>"teat", "dashboard_titles"=>"abc", "chart_type"=>"line_chart", "colorscheme"=>"default", "table_data"=>"\"stuff,Maserati,Mazda,Mercedes,Mini,Mitsubishi\\n2009,0,2941,4303,354,5814\\n2010,5,2905,2867,412,5284\\n2011,4,2517,4822,552,6127\\n2012,2,2422,5399,776,4151\\n\""}, "twitter"=>"", "commit"=>"Generate"}
+  [1m[36mUser Load (0.5ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = 4  ORDER BY "users"."id" ASC LIMIT 1[0m
+  [1m[35m (0.7ms)[0m  BEGIN
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "charts" ("chart_type", "colorscheme", "created_at", "name", "updated_at", "user_id") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["chart_type", 1], ["colorscheme", 0], ["created_at", "2014-05-02 15:18:18.700204"], ["name", "teat"], ["updated_at", "2014-05-02 15:18:18.700204"], ["user_id", 4]]
+  [1m[35m (0.4ms)[0m  COMMIT
+Redirected to http://localhost:3000/charts/17
+Completed 302 Found in 9ms (ActiveRecord: 1.9ms)
+
+
+Started GET "/charts/17" for 127.0.0.1 at 2014-05-02 16:18:18 +0100
+Processing by ChartsController#show as HTML
+  Parameters: {"id"=>"17"}
+  [1m[36mChart Load (0.4ms)[0m  [1mSELECT  "charts".* FROM "charts"  WHERE "charts"."id" = $1 LIMIT 1[0m  [["id", 17]]
+  [1m[35mDashboard Exists (0.4ms)[0m  SELECT  1 AS one FROM "dashboards" INNER JOIN "charts_dashboards" ON "dashboards"."id" = "charts_dashboards"."dashboard_id" WHERE "charts_dashboards"."chart_id" = $1 LIMIT 1  [["chart_id", 17]]
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 4]]
+  Rendered charts/_chart.html.erb (18.9ms)
+  Rendered layouts/_share.html.erb (0.0ms)
+  [1m[35mUser Load (0.5ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = 4  ORDER BY "users"."id" ASC LIMIT 1
+  Rendered charts/show.html.erb within layouts/application (23.1ms)
+  Rendered layouts/_navbar.html.erb (0.5ms)
+Completed 200 OK in 117ms (Views: 110.9ms | ActiveRecord: 4.0ms)
+
+
+Started GET "/assets/reset.css?body=1" for 127.0.0.1 at 2014-05-02 16:18:18 +0100
+
+
+Started GET "/assets/bootstrap.css?body=1" for 127.0.0.1 at 2014-05-02 16:18:18 +0100
+
+
+Started GET "/assets/font-awesome.css?body=1" for 127.0.0.1 at 2014-05-02 16:18:18 +0100
+
+
+Started GET "/assets/bootstrap-social.css?body=1" for 127.0.0.1 at 2014-05-02 16:18:18 +0100
+
+
+Started GET "/assets/charts.css?body=1" for 127.0.0.1 at 2014-05-02 16:18:18 +0100
+
+
+Started GET "/assets/dashboards.css?body=1" for 127.0.0.1 at 2014-05-02 16:18:18 +0100
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2014-05-02 16:18:18 +0100
+
+
+Started GET "/assets/navbar.css?body=1" for 127.0.0.1 at 2014-05-02 16:18:18 +0100
+
+
+Started GET "/assets/signing.css?body=1" for 127.0.0.1 at 2014-05-02 16:18:18 +0100
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-05-02 16:18:18 +0100
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-05-02 16:18:18 +0100
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-05-02 16:18:18 +0100
+
+
+Started GET "/assets/jquery.easing.min.js?body=1" for 127.0.0.1 at 2014-05-02 16:18:18 +0100
+
+
+Started GET "/assets/bootstrap/affix.js?body=1" for 127.0.0.1 at 2014-05-02 16:18:18 +0100
+
+
+Started GET "/assets/bootstrap/alert.js?body=1" for 127.0.0.1 at 2014-05-02 16:18:18 +0100
+
+
+Started GET "/assets/bootstrap/button.js?body=1" for 127.0.0.1 at 2014-05-02 16:18:18 +0100
+
+
+Started GET "/assets/bootstrap/carousel.js?body=1" for 127.0.0.1 at 2014-05-02 16:18:18 +0100
+
+
+Started GET "/assets/bootstrap/collapse.js?body=1" for 127.0.0.1 at 2014-05-02 16:18:18 +0100
+
+
+Started GET "/assets/bootstrap/dropdown.js?body=1" for 127.0.0.1 at 2014-05-02 16:18:18 +0100
+
+
+Started GET "/assets/bootstrap/tab.js?body=1" for 127.0.0.1 at 2014-05-02 16:18:18 +0100
+
+
+Started GET "/assets/bootstrap/transition.js?body=1" for 127.0.0.1 at 2014-05-02 16:18:19 +0100
+
+
+Started GET "/assets/bootstrap/scrollspy.js?body=1" for 127.0.0.1 at 2014-05-02 16:18:19 +0100
+
+
+Started GET "/assets/bootstrap/modal.js?body=1" for 127.0.0.1 at 2014-05-02 16:18:19 +0100
+
+
+Started GET "/assets/bootstrap/tooltip.js?body=1" for 127.0.0.1 at 2014-05-02 16:18:19 +0100
+
+
+Started GET "/assets/bootstrap/popover.js?body=1" for 127.0.0.1 at 2014-05-02 16:18:19 +0100
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2014-05-02 16:18:19 +0100
+
+
+Started GET "/assets/canvas2image.js?body=1" for 127.0.0.1 at 2014-05-02 16:18:19 +0100
+
+
+Started GET "/assets/canvassaver.js?body=1" for 127.0.0.1 at 2014-05-02 16:18:19 +0100
+
+
+Started GET "/assets/charts.js?body=1" for 127.0.0.1 at 2014-05-02 16:18:19 +0100
+
+
+Started GET "/assets/dashboards.js?body=1" for 127.0.0.1 at 2014-05-02 16:18:19 +0100
+
+
+Started GET "/assets/handsontable.js?body=1" for 127.0.0.1 at 2014-05-02 16:18:19 +0100
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2014-05-02 16:18:19 +0100
+
+
+Started GET "/assets/jquery.countdown.js?body=1" for 127.0.0.1 at 2014-05-02 16:18:19 +0100
+
+
+Started GET "/assets/jquery.scrollTo-1.4.3.1.min.js?body=1" for 127.0.0.1 at 2014-05-02 16:18:19 +0100
+
+
+Started GET "/assets/jquery.scrolldeck.js?body=1" for 127.0.0.1 at 2014-05-02 16:18:19 +0100
+
+
+Started GET "/assets/jquery.scrollorama.js?body=1" for 127.0.0.1 at 2014-05-02 16:18:19 +0100
+
+
+Started GET "/assets/landing-page.js?body=1" for 127.0.0.1 at 2014-05-02 16:18:19 +0100
+
+
+Started GET "/assets/widgets.js?body=1" for 127.0.0.1 at 2014-05-02 16:18:19 +0100
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-05-02 16:18:19 +0100
+
+
+Started GET "/assets/chartkick.js?body=1" for 127.0.0.1 at 2014-05-02 16:18:19 +0100
+
+
+Started GET "/assets/navbar/logo_pic.png" for 127.0.0.1 at 2014-05-02 16:18:19 +0100
+
+
+Started GET "/charts/17.json" for 127.0.0.1 at 2014-05-02 16:18:19 +0100
+Processing by ChartsController#show as JSON
+  Parameters: {"id"=>"17"}
+  [1m[36mChart Load (0.3ms)[0m  [1mSELECT  "charts".* FROM "charts"  WHERE "charts"."id" = $1 LIMIT 1[0m  [["id", 17]]
+  [1m[35mSeries Load (0.3ms)[0m  SELECT "series".* FROM "series"  WHERE "series"."chart_id" = $1  [["chart_id", 17]]
+Completed 200 OK in 10ms (Views: 0.2ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/assets/fontawesome-webfont.woff?v=4.0.3" for 127.0.0.1 at 2014-05-02 16:18:19 +0100
+
+
+Started GET "/charts/new" for 127.0.0.1 at 2014-05-02 16:20:39 +0100
+Processing by ChartsController#new as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = 4  ORDER BY "users"."id" ASC LIMIT 1[0m
+  Rendered charts/new.html.erb within layouts/application (9.4ms)
+  Rendered layouts/_navbar.html.erb (1.1ms)
+Completed 200 OK in 139ms (Views: 101.1ms | ActiveRecord: 4.3ms)
+
+
+Started GET "/assets/reset.css?body=1" for 127.0.0.1 at 2014-05-02 16:20:40 +0100
+
+
+Started GET "/assets/bootstrap.css?body=1" for 127.0.0.1 at 2014-05-02 16:20:40 +0100
+
+
+Started GET "/assets/font-awesome.css?body=1" for 127.0.0.1 at 2014-05-02 16:20:40 +0100
+
+
+Started GET "/assets/bootstrap-social.css?body=1" for 127.0.0.1 at 2014-05-02 16:20:40 +0100
+
+
+Started GET "/assets/charts.css?body=1" for 127.0.0.1 at 2014-05-02 16:20:40 +0100
+
+
+Started GET "/assets/dashboards.css?body=1" for 127.0.0.1 at 2014-05-02 16:20:40 +0100
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2014-05-02 16:20:40 +0100
+
+
+Started GET "/assets/navbar.css?body=1" for 127.0.0.1 at 2014-05-02 16:20:40 +0100
+
+
+Started GET "/assets/signing.css?body=1" for 127.0.0.1 at 2014-05-02 16:20:40 +0100
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-05-02 16:20:40 +0100
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-05-02 16:20:40 +0100
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-05-02 16:20:40 +0100
+
+
+Started GET "/assets/jquery.easing.min.js?body=1" for 127.0.0.1 at 2014-05-02 16:20:40 +0100
+
+
+Started GET "/assets/bootstrap/affix.js?body=1" for 127.0.0.1 at 2014-05-02 16:20:40 +0100
+
+
+Started GET "/assets/bootstrap/alert.js?body=1" for 127.0.0.1 at 2014-05-02 16:20:40 +0100
+
+
+Started GET "/assets/bootstrap/button.js?body=1" for 127.0.0.1 at 2014-05-02 16:20:40 +0100
+
+
+Started GET "/assets/bootstrap/carousel.js?body=1" for 127.0.0.1 at 2014-05-02 16:20:40 +0100
+
+
+Started GET "/assets/bootstrap/collapse.js?body=1" for 127.0.0.1 at 2014-05-02 16:20:40 +0100
+
+
+Started GET "/assets/bootstrap/dropdown.js?body=1" for 127.0.0.1 at 2014-05-02 16:20:40 +0100
+
+
+Started GET "/assets/bootstrap/tab.js?body=1" for 127.0.0.1 at 2014-05-02 16:20:40 +0100
+
+
+Started GET "/assets/bootstrap/transition.js?body=1" for 127.0.0.1 at 2014-05-02 16:20:40 +0100
+
+
+Started GET "/assets/bootstrap/scrollspy.js?body=1" for 127.0.0.1 at 2014-05-02 16:20:40 +0100
+
+
+Started GET "/assets/bootstrap/modal.js?body=1" for 127.0.0.1 at 2014-05-02 16:20:40 +0100
+
+
+Started GET "/assets/bootstrap/tooltip.js?body=1" for 127.0.0.1 at 2014-05-02 16:20:40 +0100
+
+
+Started GET "/assets/bootstrap/popover.js?body=1" for 127.0.0.1 at 2014-05-02 16:20:40 +0100
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2014-05-02 16:20:40 +0100
+
+
+Started GET "/assets/canvas2image.js?body=1" for 127.0.0.1 at 2014-05-02 16:20:40 +0100
+
+
+Started GET "/assets/canvassaver.js?body=1" for 127.0.0.1 at 2014-05-02 16:20:40 +0100
+
+
+Started GET "/assets/charts.js?body=1" for 127.0.0.1 at 2014-05-02 16:20:40 +0100
+
+
+Started GET "/assets/dashboards.js?body=1" for 127.0.0.1 at 2014-05-02 16:20:40 +0100
+
+
+Started GET "/assets/handsontable.js?body=1" for 127.0.0.1 at 2014-05-02 16:20:40 +0100
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2014-05-02 16:20:40 +0100
+
+
+Started GET "/assets/jquery.countdown.js?body=1" for 127.0.0.1 at 2014-05-02 16:20:40 +0100
+
+
+Started GET "/assets/jquery.scrollTo-1.4.3.1.min.js?body=1" for 127.0.0.1 at 2014-05-02 16:20:40 +0100
+
+
+Started GET "/assets/jquery.scrolldeck.js?body=1" for 127.0.0.1 at 2014-05-02 16:20:40 +0100
+
+
+Started GET "/assets/jquery.scrollorama.js?body=1" for 127.0.0.1 at 2014-05-02 16:20:40 +0100
+
+
+Started GET "/assets/landing-page.js?body=1" for 127.0.0.1 at 2014-05-02 16:20:40 +0100
+
+
+Started GET "/assets/widgets.js?body=1" for 127.0.0.1 at 2014-05-02 16:20:40 +0100
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-05-02 16:20:40 +0100
+
+
+Started GET "/assets/chartkick.js?body=1" for 127.0.0.1 at 2014-05-02 16:20:40 +0100
+
+
+Started GET "/assets/navbar/logo_pic.png" for 127.0.0.1 at 2014-05-02 16:20:40 +0100
+
+
+Started POST "/charts" for 127.0.0.1 at 2014-05-02 16:20:49 +0100
+Processing by ChartsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"hCU15sCF5WP4oodEaiikwsljRle5f5yOTpHdVgpGzUw=", "chart"=>{"name"=>"def", "dashboard_titles"=>"", "chart_type"=>"bar_chart", "table_data"=>"\"stuff,Maserati,Mazda,Mercedes,Mini,Mitsubishi\\n2009,0,2941,4303,354,5814\\n2010,5,2905,2867,412,5284\\n2011,4,2517,4822,552,6127\\n2012,2,2422,5399,776,4151\\n\""}, "twitter"=>"", "commit"=>"Generate"}
+  [1m[35mUser Load (1.1ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = 4  ORDER BY "users"."id" ASC LIMIT 1
+Completed 500 Internal Server Error in 5ms
+
+NoMethodError (undefined method `empty?' for #<Paperclip::Attachment:0x000001090d6768>):
+  app/models/chart.rb:48:in `create_datapoints'
+  app/models/chart.rb:63:in `table_data='
+  app/controllers/charts_controller.rb:10:in `create'
+
+
+  Rendered /Users/tobyretallick/.rvm/gems/ruby-2.1.0/gems/actionpack-4.1.0/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.9ms)
+  Rendered /Users/tobyretallick/.rvm/gems/ruby-2.1.0/gems/actionpack-4.1.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.4ms)
+  Rendered /Users/tobyretallick/.rvm/gems/ruby-2.1.0/gems/actionpack-4.1.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.1ms)
+  Rendered /Users/tobyretallick/.rvm/gems/ruby-2.1.0/gems/actionpack-4.1.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (17.8ms)
+
+
+Started POST "/charts" for 127.0.0.1 at 2014-05-02 16:21:17 +0100
+Processing by ChartsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"hCU15sCF5WP4oodEaiikwsljRle5f5yOTpHdVgpGzUw=", "chart"=>{"name"=>"def", "dashboard_titles"=>"", "chart_type"=>"bar_chart", "table_data"=>"\"stuff,Maserati,Mazda,Mercedes,Mini,Mitsubishi\\n2009,0,2941,4303,354,5814\\n2010,5,2905,2867,412,5284\\n2011,4,2517,4822,552,6127\\n2012,2,2422,5399,776,4151\\n\""}, "twitter"=>"", "commit"=>"Generate"}
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = 4  ORDER BY "users"."id" ASC LIMIT 1[0m
+Completed 500 Internal Server Error in 33ms
+
+EOFError (end of file reached):
+  lib/csvprocessor.rb:12:in `process'
+  app/models/chart.rb:51:in `create_datapoints'
+  app/models/chart.rb:63:in `table_data='
+  app/controllers/charts_controller.rb:10:in `create'
+
+
+  Rendered /Users/tobyretallick/.rvm/gems/ruby-2.1.0/gems/actionpack-4.1.0/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.9ms)
+  Rendered /Users/tobyretallick/.rvm/gems/ruby-2.1.0/gems/actionpack-4.1.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.5ms)
+  Rendered /Users/tobyretallick/.rvm/gems/ruby-2.1.0/gems/actionpack-4.1.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.3ms)
+  Rendered /Users/tobyretallick/.rvm/gems/ruby-2.1.0/gems/actionpack-4.1.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (17.9ms)
+
+
+Started POST "/charts" for 127.0.0.1 at 2014-05-02 16:22:06 +0100
+Processing by ChartsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"hCU15sCF5WP4oodEaiikwsljRle5f5yOTpHdVgpGzUw=", "chart"=>{"name"=>"def", "dashboard_titles"=>"", "chart_type"=>"bar_chart", "table_data"=>"\"stuff,Maserati,Mazda,Mercedes,Mini,Mitsubishi\\n2009,0,2941,4303,354,5814\\n2010,5,2905,2867,412,5284\\n2011,4,2517,4822,552,6127\\n2012,2,2422,5399,776,4151\\n\""}, "twitter"=>"", "commit"=>"Generate"}
+  [1m[35mUser Load (0.4ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = 4  ORDER BY "users"."id" ASC LIMIT 1
+Completed 500 Internal Server Error in 34ms
+
+EOFError (end of file reached):
+  lib/csvprocessor.rb:12:in `process'
+  app/models/chart.rb:51:in `create_datapoints'
+  app/models/chart.rb:63:in `table_data='
+  app/controllers/charts_controller.rb:10:in `create'
+
+
+  Rendered /Users/tobyretallick/.rvm/gems/ruby-2.1.0/gems/actionpack-4.1.0/lib/action_dispatch/middleware/templates/rescues/_source.erb (1.1ms)
+  Rendered /Users/tobyretallick/.rvm/gems/ruby-2.1.0/gems/actionpack-4.1.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.2ms)
+  Rendered /Users/tobyretallick/.rvm/gems/ruby-2.1.0/gems/actionpack-4.1.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.2ms)
+  Rendered /Users/tobyretallick/.rvm/gems/ruby-2.1.0/gems/actionpack-4.1.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (16.8ms)

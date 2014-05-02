@@ -15,7 +15,7 @@ class Chart < ActiveRecord::Base
   #   presence: true,
   # if: :new_record?
 
-    attr_accessor :dashboard_titles, :table_data
+    attr_accessor :dashboard_titles
 
     after_save :prepare_chart
 
@@ -44,42 +44,24 @@ class Chart < ActiveRecord::Base
       end
     end
 
-    def create_datapoints
-      
-      if csv.empty?
-          CSV.open('/lib/test.csv', 'wb') do |test_csv|
-            CSV.parse(self.table_data).each do |elem|
-              test_csv << elem
-            end
-          end
-          processor = CSVProcessor.new('/lib/test.csv')
-          processor.process.each do |row|
-          (1...row.size).each do |series_order|
-            current_series = Series.where(chart_id: self.id, order: series_order).first
-            Datapoint.create(x: row.values[0], y: row.values[series_order], chart_id: self.id, series_id: current_series.id)
-          end
-        end
+    def create_datapoints(data = nil)
+      return true unless csv.present? || data
 
-      else
-        processor = CSVProcessor.new(csv.path)
-        processor.process.each do |row|
-          (1...row.size).each do |series_order|
-            current_series = Series.where(chart_id: self.id, order: series_order).first
-            Datapoint.create(x: row.values[0], y: row.values[series_order], chart_id: self.id, series_id: current_series.id)
-          end
+      processor = CSVProcessor.new(csv.path || data)
+      processor.process.each do |row|
+        (1...row.size).each do |series_order|
+          current_series = Series.where(chart_id: self.id, order: series_order).first
+          self.datapoints << Datapoint.create(x: row.values[0], y: row.values[series_order], series_id: current_series.id)
         end
-        csv.destroy
       end
+      csv.destroy
     end
 
-    # def table_data=(json)
-    #   @json = json
-    # end
-
-    # def table_data
-    #   CSV.parse(@json)
-    # end
-
+    def table_data=(csv_data)
+      temp_csv = Tempfile.new('csv')
+      temp_csv.write(csv_data)
+      create_datapoints(temp_csv)
+    end
 
     def generate_dashboards
       unless dashboard_titles.nil?
