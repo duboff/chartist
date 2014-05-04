@@ -1,10 +1,9 @@
- 
-  <script src="assets/jquery.scrollTo-1.4.3.1.min.js"></script>
-  <script src="assets/jquery.scrollorama.js"></script>
-  <script src="assets/jquery.easing.1.3.js"></script>
-  <script src="assets/jquery.scrolldeck.js"></script>
+<script src="assets/jquery.scrollTo-1.4.3.1.min.js"></script>
+<script src="assets/jquery.scrollorama.js"></script>
+<script src="assets/jquery.easing.1.3.js"></script>
+<script src="assets/jquery.scrolldeck.js"></script>
 
-  <script type="text/javascript">
+<script type="text/javascript">
 $(document).ready(function() {
   var deck = new $.scrolldeck({
     buttons: '.nav-button',
@@ -16,26 +15,28 @@ $(document).ready(function() {
 });
 </script>
 
+
 <div class="wrapper">
+
   <div class="homepage-header slide" id="homepage-cover">
-      <%= image_tag "homepage/logo_home.png" %>
-      <div class="header-text">Chartist is an app that allows people quickly visualize and share simple data.<br>
-      Coming on May 9th.</div>
-      <a href="#hpsignup" class="nav-button btn btn-danger">Start creating</a><br>
-      <a href="#hpinfo" class="nav-button header-link">Or have a look at what Chartist has to offer!</a>
+    <%= image_tag "homepage/logo_home.png" %>
+    <div class="header-text">
+      Create beautiful charts on the go.
+    </div>
+    <a href="#hpsignup" class="nav-button btn btn-danger">Start creating</a><br><br>
+    <a href="#hpinfo" class="nav-button header-link">Or have a look at what Chartist has to offer!</a>
   </div>
 
   <div class="homepage-info slide" id="hpinfo">
     <%= render :file => "home/homepage_info" %>
   </div>
 
-  <div class="homepage-forms slide" id="hpsignup">
-    <%= render :file => "devise/registrations/new" %>
-  </div>
+  <!-- <div class="homepage-forms slide" id="hpsignup"> -->
+    <!-- <%#= render :file => "devise/registrations/new" %> -->
+  <!-- </div> -->
 
   <div class="homepage-footer slide">
-    Made by the <b>Chartist Team</b> at <a href="http://www.makersacademy.com" target="_blank">Makers Academy</a> &copy; 2014 All Rights Reserved.
-    <br>
+    Made by the <b>Chartist Team</b> at <a href="http://www.makersacademy.com" target="_blank">Makers Academy</a> &copy; 2014 All Rights Reserved.<br>
     Follow us on 
     <a href="https://twitter.com/ChartistChat" target="_blank"><i class="fa fa-twitter"></i> twitter</a>, 
     <a href="http://chartistchat.tumblr.com/" target="_blank"><i class="fa fa-rss"></i> blog</a>,
@@ -43,3 +44,5 @@ $(document).ready(function() {
   </div>
 
 </div>
+
+
