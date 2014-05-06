@@ -27,15 +27,19 @@
       
             <div class="col-md-6">
               <h4>Sign up with Facebook, LinkedIn or Google.</h4>
-              <%= link_to user_omniauth_authorize_path(:facebook), :class => "btn btn-block btn-social btn-facebook" do %>
-                <i class="fa fa-facebook"></i> Sign up with Facebook
-              <% end %>
-              <%= link_to user_omniauth_authorize_path(:linkedin), :class => "btn btn-block btn-social btn-linkedin" do %>
-                <i class="fa fa-linkedin"></i> Sign up with LinkedIn
-              <% end %>
-              <%= link_to user_omniauth_authorize_path(:google_oauth2), :class => "btn btn-block btn-social btn-google-plus" do %>
-                <i class="fa fa-google-plus"></i> Sign up with Google
-              <% end %>
+              <div class = "row">
+                <div class = "col-md-6 col-md-offset-2">
+                  <%= link_to user_omniauth_authorize_path(:facebook), :class => "btn btn-block btn-social btn-facebook" do %>
+                    <i class="fa fa-facebook"></i> Sign up with Facebook
+                  <% end %>
+                  <%= link_to user_omniauth_authorize_path(:linkedin), :class => "btn btn-block btn-social btn-linkedin" do %>
+                    <i class="fa fa-linkedin"></i> Sign up with LinkedIn
+                  <% end %>
+                  <%= link_to user_omniauth_authorize_path(:google_oauth2), :class => "btn btn-block btn-social btn-google-plus" do %>
+                    <i class="fa fa-google-plus"></i> Sign up with Google
+                  <% end %>
+                </div>
+              </div>
             </div>
           </div>
     
