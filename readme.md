@@ -34,7 +34,7 @@ We paid a lot of attention to the database design and modularity of the data pro
 
 During the 2 weeks we followed agile methodologies to ship code early and fast. We strongly believe in continuous deployment and fast prototyping.
 
-We begin each day with a short 15-min stand-up meeting to assess the day's goals and then split for the rest of the day to work on several issues while keeping some extra time on the day to fix issues as they arise. We also pair on the more interesting features.
+We began each day with a short 15-min stand-up meeting to assess the day's goals and then split for the rest of the day to work on several issues while keeping some extra time on the day to fix issues as they arise. 
 
 Our final project presented a learning opportunity for all of us, so we decided to pair on the most challenging features, like developing the **[Chart Feature](https://github.com/chartist/chartist/blob/master/app/models/chart.rb)**
 with a proper test-suite that covered **[integration-testing](https://github.com/chartist/chartist/blob/master/spec/features/chart_feature_spec.rb)**, **[unit-testing](https://github.com/chartist/chartist/blob/master/spec/models/chart_spec.rb)**
